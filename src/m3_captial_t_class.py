@@ -15,7 +15,7 @@ def main():
     # --------------------------------------------------------------
 
     run_test_simple_t()
-    # run_test_set_colors()
+    run_test_set_colors()
     # run_test_move_by()
     # run_test_clone()
 
@@ -174,13 +174,17 @@ class CapitalT(object):
           :type window: rg.RoseWindow
         """
         # --------------------------------------------------------------
-        # TODO: 4.
+        # Done: 4.
         #   READ the above specification, including the Example.
         #   Implement and test this method by looking at the console and
         #     the graphics window (compare it to simple_t.pdf)
         # --------------------------------------------------------------
 
     def set_colors(self, fill_color, outline_color):
+        self.h_rect.fill_color = fill_color
+        self.v_rect.fill_color = fill_color
+        self.h_rect.outline_color = outline_color
+        self.v_rect.outline_color = outline_color
         """
         What comes in:
           -- self
@@ -201,7 +205,7 @@ class CapitalT(object):
           :type outline_color: str
         """
         # --------------------------------------------------------------
-        # TODO: 5.
+        # Done: 5.
         #   READ the above specification, including the Example.
         #   Implement and test this method by uncommenting the appropriate
         #     run_test method in main. Compare the graphics window to
